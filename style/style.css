@@ -1,0 +1,192 @@
+@import url(base/reset.css);
+@import url(swiper/swiper.css);
+
+
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.nav{
+    height: 30px;
+    background-color: #f6f6f6;
+}
+.nav ul{
+    padding-top: 5px;
+    float: right;
+    display: flex;
+}
+.nav ul li{
+    margin: 0 10px 0 0;
+}
+
+.nav ul li a{
+    display: block;
+    text-decoration: none;
+}
+.nav ul li a img{
+    /* margin: 0 5px; */
+    padding: 0px 5px;
+}
+
+.fb{
+    color: #4460a0;
+}
+.twitter{
+    color: #00aaec;
+}
+
+
+
+/* navbar */
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: gray 0px 2px 3px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h1{
+    width: 21.3%;
+    padding: 10px 0px;
+}
+
+.navbar h1 a{
+    width: 170px;
+    height: 36px;
+    background-image: url(../images_text/images/logo.png);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+/* .menu{
+} */
+
+.menu li{
+    float: left;
+    /* padding: 10px 0; */
+}
+
+.change{
+    color: #00cc99;
+    font-size: 24px;
+    padding: 10px 10px;
+    display: none;
+}
+
+.menu li a{
+    font-weight: 700;
+    color: #00cc99;
+    padding: 19px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    border-bottom: 2px solid #00cc99;
+}
+
+@media(max-width:490px){
+    .navbar{
+        display: block;
+    }
+    .navbar h1{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .navbar h1 a{
+        margin: 0px;
+    }
+    .menu li{
+        width: 50%;
+        text-align: center;
+        box-shadow: #01a97f 0px 1px 3px;
+    }
+    .menu li a{
+        background-color: #00cc99;
+        color: #f6f6f6;
+
+    }
+    .menu li a:hover{
+        background-color: #f6f6f6;
+        color: #00cc99;        
+    }
+    .menu li:hover{
+        border-bottom: 0px;
+    }
+}
+
+/* main */
+
+main {
+    margin-top: 50px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    box-shadow: 0px 3px 5px lightgray;
+    padding-top: 50px;
+}
+
+.card a img{
+    position: relative;
+    left: 16%;
+}
+
+.card h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card p{
+    line-height: 22px;
+    text-align: justify;
+    padding: 20px;
+    font-size: 15px;
+}
+.card ul{
+    padding: 20px;
+    line-height: 21px;
+}
+
+.card ul p{
+    line-height: normal;
+    padding: 0px 0px 4px 0px;
+}
+.card ul li{
+    font-size: 15px;
+    list-style:disc inside;
+    /* padding-left: 0px; */
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card:hover{
+    box-shadow: 5px 8px 10px lightgray;
+}
+
+@media(max-width:900px){
+    .content{
+        display: block;
+        position: relative;
+        left: 28%;
+    }
+    main{
+        margin-top: 120px;
+    }
+}
+
+@media(max-width:490px){
+    .content{
+        left: 3%;
+    }
+}

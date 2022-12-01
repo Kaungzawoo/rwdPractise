@@ -1,0 +1,18 @@
+.swiper {
+    width: 1002px;
+    height: 346px;
+}
+
+.swiper-button-next,.swiper-button-prev{
+    z-index: 11;
+    opacity: 0.3;
+}
+
+.swiper-button-next:hover,.swiper-button-prev:hover{
+    opacity: 1;
+}
+
+:root{
+    --swiper-navigation-size:25px;
+    --swiper-theme-color: #00cc99;
+}
