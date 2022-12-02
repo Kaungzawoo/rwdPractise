@@ -7,19 +7,19 @@
     margin: 0 auto;
 }
 .nav{
-    height: 30px;
     background-color: #f6f6f6;
 }
 .nav ul{
     padding-top: 5px;
-    float: right;
     display: flex;
+    justify-content: flex-end;
 }
 .nav ul li{
     margin: 0 10px 0 0;
 }
 
 .nav ul li a{
+    padding: 8px;
     display: block;
     text-decoration: none;
 }
@@ -39,16 +39,12 @@
 
 /* navbar */
 .navbar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     box-shadow: gray 0px 2px 3px 0px;
     display: flex;
     justify-content: space-between;
 }
 
 .navbar h1{
-    width: 21.3%;
     padding: 10px 0px;
 }
 
@@ -62,12 +58,9 @@
     white-space: nowrap;
     margin-left: 10px;
 }
-/* .menu{
-} */
 
 .menu li{
     float: left;
-    /* padding: 10px 0; */
 }
 
 .change{
@@ -131,20 +124,24 @@ main {
 }
 
 .card{
-    width: 300px;
+    width: 30%;
     box-shadow: 0px 3px 5px lightgray;
     padding-top: 50px;
 }
 
 .card a img{
-    position: relative;
-    left: 16%;
+    display: block;
+    margin: 0 auto;
 }
 
 .card h3{
     text-align: center;
     font-size: 18px;
     font-weight: 500;
+}
+.card a .cardOne{
+    padding: 21px 20px;
+    line-height: 26px;
 }
 .card p{
     line-height: 22px;
@@ -153,7 +150,7 @@ main {
     font-size: 15px;
 }
 .card ul{
-    padding: 20px;
+    padding: 10px 20px;
     line-height: 21px;
 }
 
@@ -164,11 +161,15 @@ main {
 .card ul li{
     font-size: 15px;
     list-style:disc inside;
+    padding-bottom: 5px;
     /* padding-left: 0px; */
 }
 .card a{
     text-decoration: none;
     color: black;
+}
+.cardMenu{
+    padding: 13px 20px !important; 
 }
 .card:hover{
     box-shadow: 5px 8px 10px lightgray;
@@ -177,8 +178,10 @@ main {
 @media(max-width:900px){
     .content{
         display: block;
-        position: relative;
-        left: 28%;
+    }
+    .card{
+        width: 50%;
+        margin: 0 auto;
     }
     main{
         margin-top: 120px;
@@ -186,7 +189,10 @@ main {
 }
 
 @media(max-width:490px){
-    .content{
-        left: 3%;
+    .card a img{
+        width: 100%;
+    }
+    .card{
+        width: 90%;
     }
 }
